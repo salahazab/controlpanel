@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    // هنا بالخاصية دي حنخلي لو احنا ادينا عرض لأي عنصر حيكون عرضه هو العرض بالبوردر بتاعه وبالبادينج بتاعته والارتفاع نفس الكلام
+    direction: rtl;
+}
+
+* , *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-base;
+    line-height: $line-hieght;
+    color: $color-content;
+    background-color: $color-background;
+    font-family: $family-content;
+}

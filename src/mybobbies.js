@@ -1,0 +1,1 @@
+module.exports =firstone => {console.log(firstone)};
