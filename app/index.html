@@ -5,10 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية</title>
-<script defer src="/app.js"></script><link href="/assets/css/style.css" rel="stylesheet"></head>
+<script defer src="/app.js"></script><script defer src="/assets/js/banner.js"></script><script defer src="/assets/js/tabs.js"></script><script defer src="/assets/js/chart.js"></script><link href="/assets/css/style.css" rel="stylesheet"></head>
 <body>
-        <h1> انا صلاح مرحبا بكم في مسار تطوير واجهات المستخدم</h1>
+    <div class="page-container">
+        <sidebar><div class="c-sidebar">
+    <div class="c-sidebar__control">
+        <a href="./index.html" class="c-sidebar__icon c-sidebar__logo c-sidebar__icon--large">
+            <svg viewbox="0 0 35 35">
+                <circle cx="17.5" cy="17.5" r="12" fill="transparent" stroke-width="10"></circle>
+            </svg>
+        </a>
+        <a href="./add-product.html" class="c-sidebar__icon"><i class="c-icon c-icon--plus"></i></a>
+        <a href="#search" class="c-sidebar__icon"><i class="c-icon c-icon--search"></i></a>
+        <a href="#logout" class="c-sidebar__icon"><i class="c-icon c-icon--switch"></i></a>
+        <a href="#profile" class="c-sidebar__icon c-sidebar__icon--bottom c-sidebar__icon--large c-sidebar__icon--image">
+            <img src="https://i.pravatar.cc/150?img=12" alt="">
+        </a>            
+    </div>
+    <div class="c-sidebar__menu">
+        <h2 class="c-sidebar__title"><a href="./index.html">عربي</a></h2>
+        <nav class="c-sidebar__navigation">
+            <a href="./index.html" class="c-sidebar__link">نظرة عامة<i class="c-icon c-icon--equalizer"></i></a>
+            <a href="./products.html" class="c-sidebar__link">المنتجات<i class="c-icon c-icon--cart"></i></a>
+            <a href="./users.html" class="c-sidebar__link">المستخدمين<i class="c-icon c-icon--users"></i></a>
+            <a href="./orders.html" class="c-sidebar__link">الطلبات
+            <i class="c-icon c-icon--file-text"></i></a>
+        </nav>
+    </div>
+    <div class="c-sidebar__backdrop"></div>
+</div>
+</sidebar>
+        <!-- هنا دي ماانزاحتش مع البادينج اللي اديناه للكونتينر عشان هي واخده بوزيشن فكسيد -->
+        <div class="main-page">
+            <header class="home-intro">
+                <h2 class="welcome-tag">
+                    مرحبا مصطفي, اتمني انك تقضي يوما جميلا <br>
+                    شاهد اخر ما حدث في متجرك
+                </h2>
+                <div class="c-summary">
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">
+                            34
+                        </span>
+                        <span class="c-summary__key">
+                            طلب
+                        </span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">
+                            1343
+                        </span>
+                        <span class="c-summary__key">
+                            زائر
+                        </span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">
+                            $4324
+                        </span>
+                        <span class="c-summary__key">
+                            مبيعات
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <actions><ul class="c-actions">
+    <li class="c-action">
+        <span class="c-action__title">10 طلبات تحتاج المعالجة</span>
+        <a href="" class="c-btn c-action__link">مشاهدة الطلبات</a>
+    </li>
+    <li class="c-action">
+        <span class="c-action__title">5 رسائل تحتاج الاجابة</span>
+        <a href="" class="c-btn c-action__link">مشاهدة الرسائل</a>
+    </li>
+    <li class="c-action">
+        <span class="c-action__title">3منتجات ضرورية علي وشك النفاذ</span>
+        <a href="" class="c-btn c-action__link">مشاهدة المنتجات</a>
+    </li>
+</ul>
+<ul class="c-actions c-actions--oneline">
+    <li class="c-action">
+        <span class="c-action__title">10 طلبات تحتاج المعالجة</span>
+        <a href="" class="c-btn c-action__link">مشاهدة الطلبات</a>
+    </li>
+    <li class="c-action">
+        <span class="c-action__title">5 رسائل تحتاج الاجابة</span>
+        <a href="" class="c-btn c-action__link">مشاهدة الرسائل</a>
+    </li>
+    <li class="c-action">
+        <span class="c-action__title">3منتجات ضرورية علي وشك النفاذ</span>
+        <a href="" class="c-btn c-action__link">مشاهدة المنتجات</a>
+    </li>
+</ul>
+</actions>
+            <div class="c-card">
+                <h3 class="c-card__title">معلومات الشحن غير موجودة</h3>
+                <a href="" class="c-btn c-btn--primary c-card__action">ربط معلومات الشحن</a>
+                <p class="c-card__desc">إنّ معلومات الشحن غير متوفرة، لقد سبق وقمت بإعداد موقعك بجعله يبيع أغراض فعلية، عليك بملأ معلومات الشحن في متجر حتى يتاح لعكاظ معرفة كيفية توفير الشحن لزبائنك</p>
+            </div>
+            <banner><div class="c-banner">
+    <h3 class="c-banner__title">بوابة الدفع عبر بايونير متاحة !</h3>
+    <p class="c-banner__desc">تم إضافة بوابة الدفع عبر بايونير لكل متاجر عربي، تستطيع ربط حسابك في بايونير لتستقبل الأموال عبرها.</p>
+    <a href="#" class="c-btn c-btn--ghost c-banner__action">اكتشف المزيد</a>
+    <!-- حنستخدم موقع icomoon  عشان نجيب الايقونات عشان احنا عايزين ايقونات خاصة بينا ليها كلاسات بتبدأ بالسي وده متاح في الموقع ده اني اقدر احدد الكلاس اللي عايزه للايقونة -->
+    <!-- بعد كدة حنحدد الايقونات كلها اللي عايزنها من الموقع بعد كدة ننزلها بعد ما نحدد اعداداتها من خلال الريفرنس  -->
+    <!-- حتنزل عبارة عن ملف مضغوط حنفك ضغطه في ملف الفيندورز داخل ملف تاني اسمه ايكونز مثلا عشان ملف الفيندورز ده المسئول عن المكتبات الخارجية -->
+    <!-- بعد كدة حنعمل نسخة من ملف الخطوط اللي بيكون فيه الايقونات اللي نزلناها وملف السي اس اس الخاص بيه وملف الفاريبولز الخاص بيهم -->
+    <!-- وناخدهم كوبي في حته تانية مثلا في ملف الكومبوننتس الخاص بالساس داخل ملف ايكونز تاني مثلا عشان نعدل فيه براحتنا بعيدا عن الملف الاصلي  -->
+    <!-- بعد كدة حنحدد المتغير اللي بيتم حفظ الايقونات فيه ونديله الباس بتاعه بس في ملف الفاريبولز بتاعنا -->
+    <!-- بعد كدة نستدعي الايقونات -->
+    <!-- والكلاسات اللي استعناهم بيها هي اللي احنا حددناها علي الموقع بس الكلاس التاني بنكون محددين لحد -- -->
+    <i class="c-icon c-icon--flag c-banner__icon"></i>
+    <i class="c-icon c-icon--cancel-circle c-banner__close"></i>
 
+</div>
+  
+</banner>
+            <chart><div class="c-chart" data-values="[423, 534, 1244, 122, 644, 322, 1240, 1603, 234, 442, 543, 123]">
+    <header class="c-chart__header">
+        <div class="c-chart__header__title">
+            <h3 class="c-chart__title">المبيعات</h3>
+            <span class="c-chart__date">1 اكتوبر 2020</span>
+        </div>
+        <div class="c-summary c-summary--small c-summary--boxless c-summary--spaceless">
+            <div class="c-summary__data">
+                <span class="c-summary__key">التغير الشهري</span>
+                <span class="c-summary__value c-summary__value--positive">16,6%</span>
+            </div>
+            <div class="c-summary__data">
+                <span class="c-summary__key">المجموع</span>
+                <span class="c-summary__value">$96343</span>
+            </div>
+            <div class="c-summary__data">
+                <span class="c-summary__key">آخر ثلاثين يوم</span>
+                <span class="c-summary__value">$1345</span>
+            </div>
+        </div>
+        <div class="c-table__navigation">
+            <div class="c-table__navigation__arrows">
+                <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+            </div>
+        </div>
+    </header>
+    <canvas class="c-chart__data" id="example-chart" width="600" height="300"></canvas>
+    <!-- كانفاس ده عنصر بنستخدمه عشان نضيف مخططات ورسوم بيانية مثلا وبنديله ارتفاع وعرض يحتوي علي المخطط اللي حنرسمه وعشان نحط جواه الرسم ده حنستخدم مكتبة chart.js تبع جافا سكريبت -->
+</div>
+</chart>
+            <tabs><div class="c-tabs js-tabs">
+    <div class="c-tabs__control">
+        <span class="c-tabs__tab js-tab-link is-active" data-index="orders">طلبات بحاجة لمراجعة</span>
+    <!-- is-active الاصناف الدالة علي الحالة زي الصنف ده مفيش مشكلة لو استخدمناه في جافا سكريبت و سي اس اس -->
+                                <!-- ده صنف حنستخدمه في js بس -->
+        <span class="c-tabs__tab js-tab-link" data-index="products">منتجات علي وشك النفاذ</span>
+        <span class="c-tabs__tab js-tab-link" data-index="clients">زبائن جدد</span>
+    </div>
+    <div class="c-tabs__content">
+        <div class="c-tabs__tabarea js-tab-area is-active" data-indexed="orders">
+            <div>tab1</div>
+        </div>
+        <div class="c-tabs__tabarea js-tab-area" data-indexed="products">
+            <div>tab2</div>
+
+        </div>
+        <div class="c-tabs__tabarea js-tab-area" data-indexed="clients">
+            <div>tab3</div>
+        </div>                    
+
+    </div>
+</div>
+</tabs>
+            <help><div class="c-help">
+<i class="c-help__icon c-icon c-icon--lifebuoy"></i> 
+<div>
+<span class="c-help__desc">تعلم المزيد حول</span>
+<a href="../index.html" class="c-help__link">المنتجات</a> 
+</div>
+</div>
+</help>
+        </div>
+    </div>
+        
 
 </body>
 </html>

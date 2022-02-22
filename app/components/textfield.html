@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textfield Component's page</title>
+    <script type=text/html src="{require('../index.js')}"></script>
+<script defer src="/app.js"></script><link href="/assets/css/style.css" rel="stylesheet"></head>
+<body>
+    <div class="component-continer">
+        <div class="c-textfield">
+            <label for="normal" class="c-textfield__label">مدخل عادي</label>
+            <input type="text" class="c-textfield__input c-textfield__input--left c-textfield__input--small" placeholder="ادخل المحتوي" id="normal">
+        </div>
+        <div class="c-textfield">
+            <label for="textarea" class="c-textfield__label">مدخل عادي</label>
+            <textarea id="textarea" placeholder="ادخل المحتوي" class="c-textfield__textarea c-textfield__input--small"></textarea>
+            <span class="c-textfield__hint">ملاحظات من اجل المدخل</span>
+        </div>
+    </div>
+</body>
+</html>

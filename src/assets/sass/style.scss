@@ -4,6 +4,7 @@
 
 
 @import "utilites/spacing";
+@import "utilites/mixin-card.scss";
 
 
 @import "base/fonts";
@@ -11,10 +12,11 @@
 @import "base/typography";
 @import "base/links";
 
+@import "components/demo.scss";
+@import "components/components";
+@import "pages/index.scss";
+@import "pages/single-page.scss";
 // في اداة بنستخدمها اسمها بوست سي اس اس الاداة دي بتغير اي تنسيق لا يتوافق مع المتصفحات المختلفة لتنسيق يتوافق مع المتصفح اللي المستخدم بيشتغل عليه وكمان فيها بلجينز فرعية بتساعد كمان عشان لو فيه تنسيقات جديدة استخدمناها المتصفح مش بيفهمها هي حتحولها لتنسيقات قديمة المتصفح يستخدمها فحنثبت بوست سي اس اس لودر وبوست سي اس اس عندناوحنثبت البلجن post-css-presetenv
-$background-color : silver;
-body{
-    background-color: $background-color;
-}
 
+@import "hacks/add-product";
 

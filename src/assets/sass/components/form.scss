@@ -1,0 +1,21 @@
+.c-form {
+    display : flex ;
+    align-items: stretch;
+    // دي بتخلي كل ديف جواها يكون بالظبط قد المحتوي اللي جواه وميكونش واخد حجم الديف اللي جنبه ده غير انها حتخلي كل ديف متمركزة في بداية الاكسيس
+    
+}
+
+.c-form__row {
+    display: flex;
+    align-items: baseline;
+    // عشان تستوي علي سطر واحد
+    justify-content: space-between;
+    >*{
+        flex: 0 1 auto;
+        // ده الوضع الافتراضي
+        margin-right: spacing("small");
+        margin-left: spacing("small");
+    }
+   
+}
+

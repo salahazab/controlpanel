@@ -1,6 +1,6 @@
 @font-face {
     font-family: "janna LT";
-    src: local() url('../fonts/janna.woff') format("woff");
+    src: local("Janna LT"), url('../fonts/janna.woff') format("woff");
     // حنعتبر الملف ده في ال style.scss عشان كدة حنستدعي ملف الخط بالمسار اللي من خلاله.
     // استخدمنا لوكال دي عشان لو الخط كان موجود عند المستخدم علي الكمبيوتر مايحملهوش تاني من السيرفر
     font-weight: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "janna LT";
-    src: local() url('../fonts/janna-bold.woff') format("woff");
+    src: local("Janna LT"), url('../fonts/janna.woff') format("woff");
     // حنعتبر الملف ده في ال style.scss عشان كدة حنستدعي ملف الخط بالمسار اللي من خلاله.
     // استخدمنا لوكال دي عشان لو الخط كان موجود عند المستخدم علي الكمبيوتر مايحملهوش تاني من السيرفر
     font-weight: bold;

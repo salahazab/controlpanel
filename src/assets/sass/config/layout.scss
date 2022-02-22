@@ -3,3 +3,14 @@ $space-unit : 16px ;
 // ده متغير في مساحة او حجم معين انا حستخدمه بعد كدة
 $layout-sidebar : 277px;
 // عرض ال sidebar
+
+$bp-phone-normal : 380px ;
+
+$bp-tablet-small : 690px ;
+
+$bp-tablet-normal : 768px ;
+
+$bp-sidebar: $bp-tablet-normal;
+
+$bp-desktop-small : 1024px ;
+

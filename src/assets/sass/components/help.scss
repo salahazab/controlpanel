@@ -1,0 +1,21 @@
+.c-help {
+    background-color: white;
+    padding: spacing();
+    border-radius: (spacing("small")*2);
+    display: flex;
+    align-items: center;
+    margin: spacing("wide") auto;
+    border: 1px solid rgba(darken($color-primary,30%),0.15);
+    width: fit-content;
+    // هنا العرض ده بيخلي العرض يتحدد من خلال حجم العناصر اللي جوا وكمان بيدخل في الحساب المارجن والبادينج 
+    // بس لازم ناخد بالنا ان مش كل المتصفحات بتدعمه فلازم نسخدم بوست سي اس اس او نكتب ملحقات كل متصفح
+}
+
+.c-help__icon {
+    color: $color-primary;
+    margin-left: spacing("extra-small");
+    font-size: 20px;
+}
+.c-help__link{
+    color: blue;
+}

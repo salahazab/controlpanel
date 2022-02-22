@@ -1,0 +1,12 @@
+.component-continer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // عشان نخلي فيه مسافة بين العناصر
+    flex-wrap: wrap;
+    width: 95vw;
+    // بتاخد 95 في المية من حجم المتصفح
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}

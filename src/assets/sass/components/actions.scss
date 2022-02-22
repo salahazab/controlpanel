@@ -1,0 +1,66 @@
+$indicator-size: 10px;
+.c-actions {
+    @include e-card;
+    padding: 0 spacing("extra-small");
+    width: 100%;
+    list-style: none;
+}
+
+.c-action {
+    display: flex;
+    align-items: center;
+    padding: (spacing("extra-small")/2) spacing("extra-small");
+    border-bottom: 1px solid rgba(darken($color-brand, 40%), 0.1);
+    flex-wrap: wrap;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.c-action__title {
+    font-size: 14px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    // ضفنا هنا الديسبلاي فليكس والالين ايتمز سنتر للعنوان ده عشان العنوان ده دلوقتي بقي جواه ايتمز اللي هو الدايرة اللي قبلية اللي ضفناها ليه فبالخصائص دي خلينا الدايرة دي بقت في النص
+    // بقت قبل العنصر فعلا من الجنب مش فوق العنصر 
+}
+
+.c-action__title::before {
+    content: "";
+    width: $indicator-size;
+    height: $indicator-size;
+    border-radius: $indicator-size / 2;
+    background-color: $color-brand;
+    display:block;
+    margin-left: spacing();
+}
+
+.c-action__link, .c-action__title {
+    margin-top: spacing("extra-small")/2;
+    margin-bottom: spacing("extra-small")/2;
+}
+
+
+.c-actions--oneline {
+    .c-action {
+        flex-wrap: nowrap;
+        // هنا خلينا الحاجات اللي جوا الحاوية كلها ماتنزلش سطر لو المساحة قلت
+    }
+    .c-action__title {
+        white-space: nowrap;
+        // وهنا الخاصية دي بنستخدمها عشان النصوص اللي مكتوبة لو عايزين النص مهما قللت المساحة عليه يفضل في سطر واحد حتي لو انا اصلا كاتب نص كبير حستختدم نوراب وفي خواص تانية ممكن اضيفها زي ان النص ينزل لسطر جديد قبل ما المساحة تقل جدا
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // وهنا حنعوض النص الزائد بثلاث نقاط
+        position: relative;
+        padding-right: $indicator-size + spacing("extra-small");
+        display: inline;
+        // استخدمنا الخاصية ديسبلاي انلاين عشان تلغي الخاصية فليكس اللي كانت موجودة عشان القيمة الافتراضية اللي هي القيمة دي بتلغي اي خاصية محطوطة عشان الخاصية فليكس كانت مخلية الثلاث نقاط مش بتظهر
+        &:before {
+            position: absolute;
+            right: 0;
+            top: calc(50% - #{$indicator-size/2});
+        }
+    }
+}

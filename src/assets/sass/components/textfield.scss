@@ -1,0 +1,47 @@
+.c-textfield {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    // هنا استخدمنا الديسبلاي فليكس عشان نخلي الفلو بتاع العناصر يكون سطري column
+}
+
+.c-textfield__label {
+    font-size: 15px;
+    margin-bottom: spacing("extra-small");
+}
+
+.c-textfield__input,
+.c-textfield__textarea {
+    padding: 8px 12px;
+    margin-bottom: spacing("none");
+    width: 100%;
+    border-radius: 3px;
+    height: 36px;
+    border: 1px solid darken($color-white, 15%);
+    box-shadow: inset 0 1px 2px 0 rgba(darken($color-primary, 30%), 0.2);
+                // استخدمنا انسيت عشان تخلي الظل للداخل
+    &:focus{
+        outline: none;
+        box-shadow: inset 0 1px 2px 0 rgba(darken($color-primary, 30%), 0.2),
+                    0 0 0 2px $color-primary;
+        // هنا لو حددنا بوردر عند عمل فوكس حتخلي العناصر اللي جوا الانبوت تتحرك نتيجة حجم البوردر ولو استخدمنا اوت لاين بردو حيزيل البوردر راديس من المنكون عشان كدة الحل الوحيد استخدام بوكس شادو تاني يحصل لما ندوس علي الانبوت مع الحفاظ علي البوكس شادو القديم اللي بيعمل ظل داخلي
+        // هنا البوكس شادو التاني ده حيحل محل البوردر في حالة الفوكس
+    }
+    &--left {
+        direction: ltr;
+        align-items: left;
+    }
+
+}
+
+.c-textfield__textarea {
+    height: 150px;
+}
+
+.c-textfield__hint {
+    font-size: 13px;
+    color: $color-text-subdued;
+}
+
+
+

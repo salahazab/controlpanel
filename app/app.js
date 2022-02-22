@@ -20,6 +20,17 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 
 /***/ }),
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/sass/style.scss */ \"./src/assets/sass/style.scss\");\n/* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! normalize.css/normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n\n // والمكتبة دي ممكن نضمنها كملفات css جوا ملف ال base بملف بالاسم نورماليز\n//احيانا لما بنيجي نعمل ديف ونديلها نوع خط معين ومثلا الديف دي جواها كلام وفي في الديف دي زرار حنلاحظ ان في بعض المتصفحات نوع خط الزرار غير الخاص بالديف اللي هو فيها والسبب ان المتصفح بيحط قيمة افتراضية للخط مثلا للعناصر اللي انا محددتلهاش هي بالذات نوع الخط والحل اننا حنستخدم مكتبة حتوحد التنسيقات في جميع المتصفحات بعض النظر عن القيمة اللي في المتصفح وهي مكتبة نورماليز\n\n//# sourceURL=webpack://control-panel/./src/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/events/events.js":
 /*!***************************************!*\
   !*** ./node_modules/events/events.js ***!
@@ -352,27 +363,6 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./node_modules/webpack/hot sync ^\\\\.\\\\/log$\";\n\n//# sourceURL=webpack://control-panel/./node_modules/webpack/hot/_sync_nonrecursive_^\\.\\/log$?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/sass/style.scss */ \"./src/assets/sass/style.scss\");\n/* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! normalize.css/normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n\r\n\r\n// والمكتبة دي ممكن نضمنها كملفات css جوا ملف ال base بملف بالاسم نورماليز\r\n//احيانا لما بنيجي نعمل ديف ونديلها نوع خط معين ومثلا الديف دي جواها كلام وفي في الديف دي زرار حنلاحظ ان في بعض المتصفحات نوع خط الزرار غير الخاص بالديف اللي هو فيها والسبب ان المتصفح بيحط قيمة افتراضية للخط مثلا للعناصر اللي انا محددتلهاش هي بالذات نوع الخط والحل اننا حنستخدم مكتبة حتوحد التنسيقات في جميع المتصفحات بعض النظر عن القيمة اللي في المتصفح وهي مكتبة نورماليز\r\n\r\n\r\nconsole.log(\"hi\");\r\n\r\nvar hoppy = __webpack_require__(/*! ./mybobbies */ \"./src/mybobbies.js\");\r\nhoppy(\"videogames\") ;\r\n\r\n\n\n//# sourceURL=webpack://control-panel/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/mybobbies.js":
-/*!**************************!*\
-  !*** ./src/mybobbies.js ***!
-  \**************************/
-/***/ ((module) => {
-
-eval("module.exports =firstone => {console.log(firstone)};\n\n//# sourceURL=webpack://control-panel/./src/mybobbies.js?");
 
 /***/ })
 

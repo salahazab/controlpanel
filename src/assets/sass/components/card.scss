@@ -1,0 +1,46 @@
+.c-card {
+    @include e-card;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: spacing("normal")/2 spacing("normal");
+    width: 100%;
+}
+
+
+.c-card__title {
+    flex-grow: 1;
+    // الفليكس جرو دي بتخلي مثلا لو فيه حاجتين موجودين في سطر واحد وفيه مساحة كبيرة فاضية ففي العادي الفليكس جرو بتكون بصفر لكن لو حددنا 
+    // لعنصر فيهم القيمة 1 كدة انا خليتته ياخد كل المساحة الفاضية المتاحة اللي في الصف لكن لو مثلا 
+    // المساحة بتاعت السطر كله الف بيكسل وكل عنصر مساحته 100 بكسل وجيت قسمت المساحة مابينهم بالفليكس جرو يعني خليت واحد عنده فليكس جرو 2 والتاني 2 مثلا كدة المسافة بتاعت السطر كله حتتقسم عليهم هما الاتنين بالظبط لكن لو اديت مثلا واحد 3 والتاني 1 كدة واحد حياخد تلات اجزاء من السطر والتاني حياخد جزأ واحد
+    // وبتفرق بقي في القيم اللي بحددها للفليكس جرو يعني لو اديت للعنصيرين مثلا قيم مجموعهم 5 كدة السطر حيتقسم علي خمسة واحدد لكل واحد فيهم عدد معين وهكذا بأي مجموع
+    color: $color-title-subdued;
+    font-size: 17px;
+    font-weight: normal;
+    margin-left: spacing();
+    margin-top: spacing("normal")/2;
+    margin-bottom: spacing("normal")/2;
+}
+
+.c-card__action {
+    margin-top: spacing("normal");
+    margin-bottom: spacing("normal");
+}
+
+.c-card__desc {
+    width: 100%;
+    font-size: 14px;
+}
+
+.c-card--no-desc {
+    align-items: center;
+    .c-card__title{
+        margin-bottom: 0px;
+    }
+}
+
+.c-card--no-action {
+    .c-card__desc{
+        margin-top: 0px;
+    }
+}

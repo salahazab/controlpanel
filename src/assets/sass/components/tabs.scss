@@ -1,0 +1,47 @@
+.c-tabs {
+    @include e-card ;
+    width: 100%;
+    position: relative;
+}
+
+.c-tabs__control {
+    display: flex;
+    overflow-x:auto;
+    // دي حتخلي الزيادة من النص علي محور اكس يختفي بس نقدر نعمل سكرول للحاوية ونوصله
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: floor(($line-hieght*$font-base)+(spacing()*2));
+        // هنا حددنا ارتفاع البيفور دي من خلال ارتفاع الكلام نفسه اللي جبناه من حجم الخط مضروب في ارتفاع الخط وجمعنا عليه البادينج اللي من فوق وتحت وحطينا فلوور عشان تقرب الرقم لأقل رقم عشان لو فيه زيادة في العشري في العادي بتزيد بكسيل 
+        background: linear-gradient(90deg ,white 20px ,transparent 30px);
+        // وهنا استخدمنا تدرج في الالوان بس جرادينت دي تعتبر صورة عشان كدة مينفعش نستخدم باكجراوند كلور واستخدمنا 90 درجة عشان تمشي لليمين 
+        // وهنا اللي حيحصل ان اللون الابيض حيكون 20 بكسل بعد كدة 30 بكسل تدرج الوان بين الابيض ولون الترانسبيرنت بعد كدة تكمل ترانسبيرنت
+        pointer-events: none;
+        // عشان الغي اي حدث من ضغط او اي حاجة علي البيفور وبالتالي يتنفذ الحدث علي العنصر اللي وراها اللي هو التابز
+    }
+}
+
+.c-tabs__tab{
+    flex-grow: 1;
+    // هنا كل تاب ملت المساحة بتاعتها اللي كانت فاضية فانتشرو
+    text-align: center;
+    padding: spacing() spacing("small");
+    border-bottom: 3px solid transparent;
+    white-space: pre;
+    // هنا استخدمنا وايت سبيس مش فليكس نو راب عشان ده نص مش مجموعة ديفات جمب بعض 
+}
+
+.c-tabs__tab.is-active {
+    border-color: $color-primary;
+}
+
+.c-tabs__tabarea{
+    display: none;
+}
+
+ .c-tabs__tabarea.is-active {
+    display: block;
+}
